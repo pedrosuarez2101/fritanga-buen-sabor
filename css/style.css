@@ -1,0 +1,141 @@
+/* General */
+body.pagina {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Layout principal (estructura visual general) */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #d62828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado__titulo {
+    margin: 0;
+}
+
+/* Menú de navegación */
+.menu__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fcbf49;
+}
+
+.menu__item {
+    margin: 10px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contenido__titulo {
+    font-size: 24px;
+}
+
+.contenido__texto {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #003049;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.pie__texto {
+    margin: 0;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.platillo {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.platillo__imagen {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.platillo__nombre {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Formulario */
+.formulario__label {
+    font-weight: bold;
+}
+
+.formulario__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario__submit {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulario__submit:hover {
+    background-color: #a61c1c;
+}
+
+/* Mobile First: adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu__lista {
+    flex-direction: column;
+    }
+
+    .contenido {
+    margin: 10px;
+    padding: 15px;
+    }
+}
