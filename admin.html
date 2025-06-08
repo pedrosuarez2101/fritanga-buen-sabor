@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Reservaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="pagina">
+    <div class="layout">
+      <header class="encabezado">
+        <h1 class="encabezado__titulo">Panel de Reservaciones</h1>
+      </header>
+
+      <main class="contenido">
+        <h2 class="contenido__titulo">Lista de Reservaciones</h2>
+        <div id="lista-reservas"></div>
+
+        <h3 class="contenido__titulo">Agregar Nueva Reservación</h3>
+        <form id="formAgregar" class="formulario">
+          <input
+            class="formulario__input"
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <input class="formulario__input" type="date" id="fecha" required />
+          <input class="formulario__input" type="time" id="hora" required />
+          <input
+            class="formulario__input"
+            type="number"
+            id="personas"
+            placeholder="Personas"
+            required
+            min="1"
+          />
+          <button class="formulario__submit" type="submit">Agregar</button>
+        </form>
+      </main>
+
+      <footer class="pie">
+        <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
+      </footer>
+    </div>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

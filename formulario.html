@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservaciones - Fritanga El Buen Sabor</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="pagina">
+  <body class="pagina">
     <div class="layout">
-    <header class="encabezado">
+      <header class="encabezado">
         <h1 class="encabezado__titulo">Fritanga El Buen Sabor</h1>
-    </header>
+      </header>
 
-    <nav class="menu">
+      <nav class="menu">
         <ul class="menu__lista">
-        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-        <li class="menu__item"><a class="menu__link" href="galeria.html">Galería</a></li>
-        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
-        <li class="menu__item"><a class="menu__link" href="formulario.html">Reservaciones</a></li>
-        <li class="menu__item"><a class="menu__link" href="acerca.html">Nosotros</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="galeria.html">Galería</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="formulario.html">Reservaciones</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="acerca.html">Nosotros</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
-    <main class="contenido">
+      <main class="contenido">
         <h2 class="contenido__titulo">Haz tu Reservación</h2>
         <form class="formulario" action="#" method="post">
-        <label class="formulario__label" for="nombre">Nombre completo:</label><br>
-        <input class="formulario__input" type="text" id="nombre" name="nombre" required><br><br>
+          <label class="formulario__label" for="nombre">Nombre completo:</label
+          ><br />
+          <input
+            class="formulario__input"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+          /><br /><br />
 
-        <label class="formulario__label" for="fecha">Fecha:</label><br>
-        <input class="formulario__input" type="date" id="fecha" name="fecha" required><br><br>
+          <label class="formulario__label" for="fecha">Fecha:</label><br />
+          <input
+            class="formulario__input"
+            type="date"
+            id="fecha"
+            name="fecha"
+            required
+          /><br /><br />
 
-        <label class="formulario__label" for="hora">Hora:</label><br>
-        <input class="formulario__input" type="time" id="hora" name="hora" required><br><br>
+          <label class="formulario__label" for="hora">Hora:</label><br />
+          <input
+            class="formulario__input"
+            type="time"
+            id="hora"
+            name="hora"
+            required
+          /><br /><br />
 
-        <label class="formulario__label" for="personas">Número de personas:</label><br>
-        <input class="formulario__input" type="number" id="personas" name="personas" min="1" required><br><br>
+          <label class="formulario__label" for="personas"
+            >Número de personas:</label
+          ><br />
+          <input
+            class="formulario__input"
+            type="number"
+            id="personas"
+            name="personas"
+            min="1"
+            required
+          /><br /><br />
 
-        <input class="formulario__submit" type="submit" value="Reservar">
+          <input class="formulario__submit" type="submit" value="Reservar" />
         </form>
-    </main>
+      </main>
 
-    <footer class="pie">
+      <footer class="pie">
         <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
-    </footer>
+      </footer>
     </div>
-</body>
 
+    <script src="js/api.js"></script>
+  </body>
 </html>
