@@ -4,7 +4,7 @@ Este sitio web fue desarrollado como parte del proyecto BOA en la carrera de Ing
 
 ---
 
-## 📌 Páginas del sitio
+## Páginas del sitio
 
 - `index.html` → Página de inicio con presentación general.
 - `galeria.html` → Galería de imágenes de platillos típicos.
@@ -14,7 +14,7 @@ Este sitio web fue desarrollado como parte del proyecto BOA en la carrera de Ing
 
 ---
 
-## 🎯 Objetivos aplicados
+## Objetivos aplicados
 
 - Uso de etiquetas **HTML5 semánticas** (`<header>`, `<nav>`, `<main>`, `<footer>`).
 - Aplicación de **CSS puro** sin frameworks.
@@ -25,24 +25,24 @@ Este sitio web fue desarrollado como parte del proyecto BOA en la carrera de Ing
 
 ---
 
-## 💻 Competencias desarrolladas
+## Competencias desarrolladas
 
 ### 🛠 Técnica
 - Estructuración de un sitio web completo desde cero.
 - Separación de contenido (HTML) y estilo (CSS).
 - Organización y reutilización de clases con BEM.
 
-### 🧠 Digital
+### Digital
 - Uso de herramientas del navegador (inspección, consola, diseño responsivo).
 - Aplicación de `flex` y `grid` según el tipo de contenido.
 
-### 👥 Trabajo colaborativo
+### Trabajo colaborativo
 - Proyecto organizado por carpetas: `/css`, `/img`, archivos HTML y `README.md`.
 - Documentación clara que explica el proyecto.
 
 ---
 
-## 🗂 Estructura del proyecto
+## Estructura del proyecto
 
 fritanga-buen-sabor/
 ├── index.html
@@ -61,7 +61,7 @@ fritanga-buen-sabor/
 └── yuca.jpg
 
 
-## ✅ Buenas prácticas aplicadas
+## Buenas prácticas aplicadas
 
 - Uso de etiquetas semánticas.
 - Código indentado y legible.
