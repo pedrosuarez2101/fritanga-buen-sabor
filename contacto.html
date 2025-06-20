@@ -2,40 +2,63 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - Fritanga El Buen Sabor</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fuentes importadas de google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body class="pagina">
-    <div class="layout">
     <header class="encabezado">
-        <h1 class="encabezado__titulo">Fritanga El Buen Sabor</h1>
+        <img src="img/logo.png" alt="Logo El Buen Sabor" class="encabezado__logo" />
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="menu.html">Menú</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link" href="formulario.html">Reservaciones</a></li>
+                <li class="menu__item"><a class="menu__link" href="acerca.html">Nosotros</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="menu">
-        <ul class="menu__lista">
-        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-        <li class="menu__item"><a class="menu__link" href="galeria.html">Galería</a></li>
-        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
-        <li class="menu__item"><a class="menu__link" href="formulario.html">Reservaciones</a></li>
-        <li class="menu__item"><a class="menu__link" href="acerca.html">Nosotros</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="contacto-pagina">
+            <h2 class="contacto-pagina__titulo">Contáctanos</h2>
+            <p class="contacto-pagina__texto">Estamos felices de responder tus dudas, escuchar sugerencias o ayudarte
+                con tu reservación.</p>
 
-    <main class="contenido">
-        <h2 class="contenido__titulo">Contáctanos</h2>
-        <p class="contenido__texto">Estamos ubicados en Managua, Nicaragua.</p>
-        <p class="contenido__texto">Teléfono: +505 8888 4444</p>
-        <p class="contenido__texto">Correo electrónico: elbuensabor@fritanga.com</p>
-        <p class="contenido__texto">Horario: Lunes a Domingo, 8:00 a.m. - 9:00 p.m.</p>
+            <div class="contacto-pagina__grid">
+                <div class="contacto-pagina__info">
+                    <p><i class="fas fa-map-marker-alt"></i> Masaya - Parque San Jerónimo, 3c al Sur, 1/2c al Este</p>
+                    <p><i class="fas fa-phone"></i> +505 7612 5248</p>
+                    <p><i class="fas fa-envelope"></i> info@elbuenSabor.com</p>
+                </div>
+
+                <form class="formulario">
+                    <label class="formulario__label" for="nombre">Nombre:</label>
+                    <input class="formulario__input" type="text" id="nombre" required />
+
+                    <label class="formulario__label" for="correo">Correo:</label>
+                    <input class="formulario__input" type="email" id="correo" required />
+
+                    <label class="formulario__label" for="mensaje">Mensaje:</label>
+                    <textarea class="formulario__input" id="mensaje" rows="5" required></textarea>
+
+                    <button class="formulario__submit" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="pie">
         <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
     </footer>
-    </div>
 </body>
 
 </html>

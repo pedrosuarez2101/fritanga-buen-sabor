@@ -7,7 +7,7 @@ Este sitio web fue desarrollado como parte del proyecto BOA en la carrera de Ing
 ## Páginas del sitio
 
 - `index.html` → Página de inicio con presentación general.
-- `galeria.html` → Galería de imágenes de platillos típicos.
+- `menu.html` → Menu con los platillos (imágenes) que ofrece el local.
 - `contacto.html` → Datos de contacto y ubicación.
 - `formulario.html` → Formulario de reservaciones.
 - `acerca.html` → Información sobre la fritanga.
@@ -46,7 +46,7 @@ Este sitio web fue desarrollado como parte del proyecto BOA en la carrera de Ing
 
 fritanga-buen-sabor/
 ├── index.html
-├── galeria.html
+├── menu.html
 ├── contacto.html
 ├── formulario.html
 ├── acerca.html
@@ -55,9 +55,14 @@ fritanga-buen-sabor/
 │ └── style.css
 └── img/
 ├── baho.jpg
+├── bebidas.png
+├── carne.jpg
 ├── fritanga.jpg
+├── hero
 ├── indioviejo.jpg
+├── logo.png
 ├── nacatamal.jpg
+├── postres
 └── yuca.jpg
 
 

@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Reservaciones</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="pagina">
-    <div class="layout">
-      <header class="encabezado">
-        <h1 class="encabezado__titulo">Panel de Reservaciones</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Fritanga El Buen Sabor</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
 
-      <main class="contenido">
-        <h2 class="contenido__titulo">Lista de Reservaciones</h2>
-        <div id="lista-reservas"></div>
+<body class="pagina">
+  <header class="encabezado">
+    <img src="img/logo.png" alt="Logo El Buen Sabor" class="encabezado__logo" />
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+        <li class="menu__item"><a class="menu__link" href="menu.html">Menú</a></li>
+        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+        <li class="menu__item"><a class="menu__link" href="formulario.html">Reservaciones</a></li>
+        <li class="menu__item"><a class="menu__link" href="acerca.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <h3 class="contenido__titulo">Agregar Nueva Reservación</h3>
-        <form id="formAgregar" class="formulario">
-          <input
-            class="formulario__input"
-            type="text"
-            id="nombre"
-            placeholder="Nombre"
-            required
-          />
-          <input class="formulario__input" type="date" id="fecha" required />
-          <input class="formulario__input" type="time" id="hora" required />
-          <input
-            class="formulario__input"
-            type="number"
-            id="personas"
-            placeholder="Personas"
-            required
-            min="1"
-          />
-          <button class="formulario__submit" type="submit">Agregar</button>
-        </form>
-      </main>
+  <main>
+    <section class="admin">
+      <h2 class="admin__titulo">Panel de Administración</h2>
+      <p class="admin__texto">Bienvenido al panel. Desde aquí puedes gestionar distintas secciones del sitio.</p>
 
-      <footer class="pie">
-        <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
-      </footer>
-    </div>
+      <div class="admin__botones">
+        <a href="#" class="btn">Ver Reservaciones</a>
+        <a href="#" class="btn">Editar Menú</a>
+        <a href="#" class="btn">Subir Imágenes</a>
+        <a href="index.html" class="btn">Cerrar sesión</a>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/admin.js"></script>
-  </body>
+  <footer class="pie">
+    <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
+  </footer>
+</body>
 </html>

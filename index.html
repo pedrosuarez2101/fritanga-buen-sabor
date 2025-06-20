@@ -1,62 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio - Fritanga El Buen Sabor</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/icono2.png" type="image/png" />
-  </head>
 
-  <body class="pagina">
-    <div class="layout">
-      <!-- Encabezado principal -->
-      <header class="encabezado">
-        <h1 class="encabezado__titulo">Fritanga El Buen Sabor</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Fritanga El Buen Sabor</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/icono2.png" type="image/png" />
+  <!-- Link de vínculo para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-      <!-- Menú de navegación -->
-      <nav class="menu">
-        <ul class="menu__lista">
-          <li class="menu__item">
-            <a class="menu__link" href="index.html">Inicio</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="galeria.html">Galería</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="formulario.html">Reservaciones</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="admin.html">Admin</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="acerca.html">Nosotros</a>
-          </li>
-        </ul>
-      </nav>
 
-      <!-- Contenido principal -->
-      <main class="contenido">
-        <h2 class="contenido__titulo">Bienvenidos a nuestra Fritanga</h2>
-        <p class="contenido__texto">
-          En "Fritanga El Buen Sabor" ofrecemos comida típica nicaragüense con
-          el toque casero que tanto te gusta. Nuestro menú incluye nacatamales,
-          baho, indio viejo, yuca con chicharrón y mucho más.
-        </p>
-        <p class="contenido__texto">
-          Explora nuestro sitio para conocer más sobre nosotros, ver nuestras
-          delicias en la galería y reservar tu próxima visita.
-        </p>
-      </main>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <!-- Pie de página -->
-      <footer class="pie">
-        <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
-      </footer>
+<body class="pagina">
+
+  <!-- Encabezado con logo y navegación -->
+  <header class="encabezado">
+    <img src="img/logo.png" alt="Logo El Buen Sabor" class="encabezado__logo" />
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+        <li class="menu__item"><a class="menu__link" href="menu.html">Menú</a></li>
+        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+        <li class="menu__item"><a class="menu__link" href="formulario.html">Reservaciones</a></li>
+        <li class="menu__item"><a class="menu__link" href="acerca.html">Nosotros</a></li>
+        <li class="menu__item"><a class="menu__link" href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+
+    <div class="encabezado__info">
+      <p class="encabezado__direccion">
+        📍 Masaya - Parque San Jerónimo 3 c. al Sur 1/2 c. al Este
+      </p>
+      <div class="encabezado__redes">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
     </div>
-  </body>
+
+  </header>
+
+  <main>
+    <!-- Sección de Hero -->
+    <section class="hero">
+      <div class="hero__contenido">
+        <h2 class="hero__titulo">Sabor que conquista</h2>
+        <p class="hero__subtitulo">Comida nicaragüense con el auténtico toque casero</p>
+        <a href="formulario.html" class="btn">Hacer reservación</a>
+      </div>
+    </section>
+
+    <!-- Texto de bienvenida -->
+    <section class="contenido">
+      <img src="img/logo.png" alt="Logo El Buen Sabor" class="contenido_logo">
+      <h2 class="contenido__titulo">¡Bienvenidos!</h2>
+      <p class="contenido__texto">
+        En fritanga <strong>El Buen Sabor</strong> combinamos tradición, sazón y hospitalidad. Nuestra cocina nace del
+        corazón de la cultura nicaragüense. Ofrecemos comida típica con ese toque casero que tanto te gusta.
+        Nuestro menú incluye nacatamales, baho, indio viejo, chicharrón con yuca y mucho más.
+      </p>
+
+      <p class="contenido__texto">
+        Explora nuestro sitio para conocer más sobre nosotros, ver nuestras delicias en la galería y reservar tu próxima
+        visita.
+      </p>
+    </section>
+
+    <!-- Sección de menú -->
+    <section class="menu-seccion">
+      <h2 class="menu-seccion__titulo">Venga a disfrutar</h2>
+
+      <div class="menu-seccion__cards">
+        <div class="menu-card">
+          <img src="img/carne.jpg" alt="Carnes" class="menu-card__img" />
+          <h3 class="menu-card__titulo">Carnes</h3>
+          <p class="menu-card__texto">Pruebe la diversidad de cortes y diguste la calidad del sabor de la carne con
+            sabor nicaragüense. .</p>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/bebidas.png" alt="Bebidas" class="menu-card__img" />
+          <h3 class="menu-card__titulo">Bebidas</h3>
+          <p class="menu-card__texto">Deléite su paladar con las más exquisitas y variadas bebidas típicas.</p>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/postres.jpg" alt="Café y Postres" class="menu-card__img" />
+          <h3 class="menu-card__titulo">Postres</h3>
+          <p class="menu-card__texto">Una selección de deliciosos postres típicos nicaragüenses que lo dejarán
+            chupándose los dedos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Última sección del index -->
+  <section class="contacto-seccion">
+    <img src="img/logo.png" alt="Logo El Buen Sabor" class="contacto__logo" />
+
+    <div class="contacto__info">
+      <p>Masaya - Parque San Jerónimo</p>
+      <p>3 cuadras al Sur, 1/2 cuadra al Este</p>
+      <p class="contacto__telefono">📞 +505 7612 5248</p>
+
+      <div class="contacto__redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
+  </footer>
+
+</body>
+
 </html>
