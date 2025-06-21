@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservaciones - Fritanga El Buen Sabor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="pagina">
+    <header class="encabezado">
+      <img
+        src="img/logo.png"
+        alt="Logo El Buen Sabor"
+        class="encabezado__logo"
+      />
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="menu.html">Menú</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="formulario.html">Reservaciones</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="acerca.html">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="reservacion">
+        <h2 class="reservacion__titulo">Reservaciones</h2>
+        <p class="reservacion__texto">
+          Completa el formulario para reservar una mesa con nosotros. Te
+          confirmaremos lo antes posible.
+        </p>
+
+        <form class="formulario">
+          <label class="formulario__label" for="nombre">Nombre:</label>
+          <input class="formulario__input" type="text" id="nombre" required />
+
+          <label class="formulario__label" for="telefono">Teléfono:</label>
+          <input class="formulario__input" type="tel" id="telefono" required />
+
+          <label class="formulario__label" for="fecha">Fecha:</label>
+          <input class="formulario__input" type="date" id="fecha" required />
+
+          <label class="formulario__label" for="hora">Hora:</label>
+          <input class="formulario__input" type="time" id="hora" required />
+
+          <label class="formulario__label" for="personas"
+            >Número de personas:</label
+          >
+          <input
+            class="formulario__input"
+            type="number"
+            id="personas"
+            min="1"
+            max="20"
+            required
+          />
+
+          <label class="formulario__label" for="comentario"
+            >Comentario (opcional):</label
+          >
+          <textarea
+            class="formulario__input"
+            id="comentario"
+            rows="4"
+          ></textarea>
+
+          <button class="formulario__submit" type="submit">
+            Reservar mesa
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
+    </footer>
+
+    <!-- Enlace a tu script JavaScript -->
+    <script src="js/reservaciones.js"></script>
+  </body>
+</html>

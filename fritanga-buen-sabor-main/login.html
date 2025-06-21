@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Fritanga El Buen Sabor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="pagina login-pagina">
+    <div class="login__contenedor">
+      <img src="img/logo.png" alt="Logo Fritanga" class="login__logo" />
+      <form class="formulario login__formulario">
+        <h2 class="login__titulo">Panel de Administración</h2>
+
+        <label class="formulario__label" for="usuario">Usuario</label>
+        <input class="formulario__input" type="text" id="usuario" required />
+
+        <label class="formulario__label" for="password">Contraseña</label>
+        <input
+          class="formulario__input"
+          type="password"
+          id="password"
+          required
+        />
+
+        <button class="formulario__submit login__boton" type="submit">
+          Ingresar
+        </button>
+        <p class="login__mensaje" id="mensaje"></p>
+      </form>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
