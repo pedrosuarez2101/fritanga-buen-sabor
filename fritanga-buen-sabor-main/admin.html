@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Admin - Fritanga</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body class="pagina admin-pagina">
+    <!-- Barra superior -->
+    <header class="admin-header">
+      <div class="admin-header__izquierda">
+        <img
+          src="img/logo.png"
+          alt="Logo Fritanga"
+          class="admin-header__logo"
+        />
+        <span class="admin-header__usuario" id="adminNombre"
+          >Bienvenido, admin</span
+        >
+      </div>
+      <button class="admin-header__logout" onclick="cerrarSesion()">
+        Cerrar sesión
+      </button>
+    </header>
+
+    <main class="admin-panel">
+      <h2 class="admin-panel__titulo">Reservaciones</h2>
+      <p class="admin-panel__contador" id="contadorReservas">
+        Cargando reservaciones...
+      </p>
+
+      <div class="admin-panel__contenedor">
+        <table class="admin-tabla" id="tablaReservas">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Teléfono</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Personas</th>
+              <th>Comentario</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Contenido dinámico -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.admin-header {
+  background-color: #3e2723;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-header__izquierda {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-header__logo {
+  height: 50px;
+}
+
+.admin-header__usuario {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.admin-header__logout {
+  background-color: #d62828;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.admin-header__logout:hover {
+  background-color: #a61f1f;
+}
+
+.admin-panel__contador {
+  font-size: 1.1rem;
+  color: #3e2723;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
