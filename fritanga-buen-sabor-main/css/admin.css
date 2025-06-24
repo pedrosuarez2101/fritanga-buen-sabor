@@ -1,21 +1,35 @@
+:root {
+  --color-fondo: #fbeee0;
+  --color-primario: #3e2723;
+  --color-acento: #d62828;
+  --color-hover: #a61f1f;
+  --borde-radio: 10px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --padding: 16px;
+  --fuente-base: "Segoe UI", sans-serif;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+}
+
 .admin-header {
-  background-color: #3e2723;
+  background-color: var(--color-primario);
   color: white;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--padding);
   flex-wrap: wrap;
-}
-
-.admin-header__izquierda {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  box-shadow: var(--sombra);
 }
 
 .admin-header__logo {
-  height: 50px;
+  height: 48px;
 }
 
 .admin-header__usuario {
@@ -24,23 +38,193 @@
 }
 
 .admin-header__logout {
-  background-color: #d62828;
-  color: white;
+  background-color: var(--color-acento);
   border: none;
-  padding: 10px 16px;
-  border-radius: 5px;
-  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--borde-radio);
   font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .admin-header__logout:hover {
-  background-color: #a61f1f;
+  background-color: var(--color-hover);
+}
+
+.admin-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background-color: #f0dbd3;
+  padding: 10px;
+  flex-wrap: wrap;
+  box-shadow: var(--sombra);
+}
+
+.admin-nav button {
+  background-color: white;
+  color: var(--color-primario);
+  border: 1px solid var(--color-primario);
+  padding: 8px 16px;
+  border-radius: var(--borde-radio);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.admin-nav button:hover {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.admin-panel {
+  padding: var(--padding);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admin-seccion {
+  margin-top: 20px;
+}
+
+.admin-panel__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--color-primario);
+}
+
+.admin-panel__agregar {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--borde-radio);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.admin-panel__agregar:hover {
+  background-color: var(--color-hover);
+}
+
+.admin-panel__contenedor {
+  overflow-x: auto;
+}
+
+.admin-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: var(--sombra);
+  background-color: white;
+  border-radius: var(--borde-radio);
+  overflow: hidden;
+}
+
+.admin-tabla th,
+.admin-tabla td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  max-width: 200px;
+}
+
+.admin-tabla th {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.admin-tabla td input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 0.95rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.admin-tabla__input {
+  background-color: #fff5f0;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.admin-tabla button {
+  margin-right: 4px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.admin-tabla button:hover {
+  color: var(--color-acento);
 }
 
 .admin-panel__contador {
-  font-size: 1.1rem;
-  color: #3e2723;
-  font-weight: 600;
   text-align: center;
-  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+footer.pie {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.pie__texto {
+  margin: 0;
+}
+
+/* KPI */
+#seccion-kpi canvas {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+#seccion-kpi .admin-panel__contenedor {
+  padding: 20px;
+  background-color: white;
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-tabla th,
+  .admin-tabla td {
+    font-size: 0.9rem;
+    padding: 8px;
+    max-width: 150px;
+  }
+
+  .admin-header__usuario {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .admin-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-nav button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .admin-panel__titulo {
+    font-size: 1.3rem;
+  }
 }

@@ -208,6 +208,20 @@ h3 {
   display: block;
 }
 
+/* Eliminar estilos de enlace en tarjetas del menú */
+.menu-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Opcional: efecto hover para mejorar la experiencia */
+.menu-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 /* Sección de contacto en el header*/
 .contacto-seccion {
   background-color: #2d1e1b;

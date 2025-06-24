@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/admin.css" />
   </head>
   <body class="pagina admin-pagina">
-    <!-- Barra superior -->
+    <!-- Encabezado -->
     <header class="admin-header">
       <div class="admin-header__izquierda">
         <img
@@ -25,36 +25,89 @@
       </button>
     </header>
 
-    <main class="admin-panel">
-      <h2 class="admin-panel__titulo">Reservaciones</h2>
-      <p class="admin-panel__contador" id="contadorReservas">
-        Cargando reservaciones...
-      </p>
+    <!-- Menú de navegación -->
+    <nav class="admin-nav">
+      <button onclick="mostrarSeccion('reservaciones')">Reservaciones</button>
+      <button onclick="mostrarSeccion('contacto')">Mensajes de Contacto</button>
+      <button onclick="mostrarSeccion('kpi')">Estadísticas KPI</button>
+    </nav>
 
-      <div class="admin-panel__contenedor">
-        <table class="admin-tabla" id="tablaReservas">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Teléfono</th>
-              <th>Fecha</th>
-              <th>Hora</th>
-              <th>Personas</th>
-              <th>Comentario</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Contenido dinámico -->
-          </tbody>
-        </table>
-      </div>
+    <!-- Contenido Principal -->
+    <main class="admin-panel">
+      <!-- Sección de Reservaciones -->
+      <section id="seccion-reservaciones" class="admin-seccion">
+        <h2 class="admin-panel__titulo">Reservaciones</h2>
+        <button onclick="crearReserva()" class="admin-panel__agregar">
+          ➕ Agregar reservación
+        </button>
+
+        <p id="resumenReservas" class="admin-panel__contador">
+          Cargando datos...
+        </p>
+        <div class="admin-panel__contenedor">
+          <table class="admin-tabla" id="tablaReservas">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Personas</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección de Mensajes de Contacto -->
+      <section
+        id="seccion-contacto"
+        class="admin-seccion"
+        style="display: none"
+      >
+        <h2 class="admin-panel__titulo">Mensajes de Contacto</h2>
+        <div class="admin-panel__contenedor">
+          <table class="admin-tabla" id="tablaContacto">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección de Estadísticas KPI -->
+      <section id="seccion-kpi" class="admin-seccion" style="display: none">
+        <h2 class="admin-panel__titulo">Estadísticas (KPI)</h2>
+        <div class="admin-panel__contenedor">
+          <p id="kpi-total-reservas">Total de Reservaciones: --</p>
+          <p id="kpi-total-personas">Total de Personas: --</p>
+
+          <!-- Aquí se muestra el gráfico -->
+          <canvas
+            id="graficoReservas"
+            width="400"
+            height="200"
+            style="max-width: 100%; margin-top: 20px"
+          ></canvas>
+        </div>
+      </section>
     </main>
 
+    <!-- Pie de página -->
     <footer class="pie">
       <p class="pie__texto">&copy; 2025 Fritanga El Buen Sabor</p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
